@@ -1,0 +1,20 @@
+.App {
+  text-align: center;
+}
+.main_div {
+ 
+}
+
+.div2 {
+  display: flex;
+  flex-direction:column;
+  width: 40%;
+  margin: auto;
+  background-color: rgb(186, 224, 224);
+}
+
+button{
+  width:20%;
+  margin: auto;
+  height: 30px;
+}
