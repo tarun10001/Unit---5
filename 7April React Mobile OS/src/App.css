@@ -1,0 +1,12 @@
+.App {
+  text-align: center;
+}
+
+.main_Div {
+  font-size:20px;
+  margin:0 200px;
+}
+
+.mobile>ul>li:nth-child(4){
+  list-style: circle;
+}
