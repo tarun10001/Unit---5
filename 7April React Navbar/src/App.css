@@ -1,0 +1,43 @@
+.App {
+  text-align: center;
+
+}
+
+
+.Navbar {
+  border: 1px solid black;
+  background-color: #24252B;
+  display: flex;
+  justify-content: space-around;
+  height:50px;
+  width: 90%;
+  margin: auto;
+  margin-top: 2%;
+  align-items: center;
+}
+
+.link{
+  display:flex;
+  justify-content:space-between;
+  width:20%;
+  margin: auto;
+  color:white;
+  cursor: pointer;
+}
+
+.btn {
+  border-radius:20px;
+  width:100%;
+  cursor: pointer;
+  background-color:#0085AB;
+  color: white;
+  padding: 6px 20px;
+  margin: 0;
+} 
+
+.logo {
+  color: white;
+  width: 10%;
+  margin-left:1%;
+  letter-spacing: 2px;
+}
