@@ -1,0 +1,44 @@
+.App {
+  text-align: center;
+  border: 1px solid rgb(82, 64, 64);
+  width: 50%;
+  margin: auto;
+  margin-top:15%;
+  height: 150px;
+  border-radius: 20px;
+}
+
+.circle {
+  list-style: circle;
+}
+
+.Square {
+  list-style: square;
+}
+
+.nav {
+  /* display: flex; */
+  justify-content: space-between;
+}
+
+.Even {
+  color:red;
+}
+.Odd {
+  color: green;
+}
+
+
+
+button {
+  background-color: rgb(114, 154, 187);
+  width: 15%;
+  height: 30px;
+  color:white;
+  font-size: 18px;
+  font-weight: bolder;
+}
+button:hover {
+  color: rgb(255, 255, 255);
+  background-color:rgb(19, 42, 43);
+}
