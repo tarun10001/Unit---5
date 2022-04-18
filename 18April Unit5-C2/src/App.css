@@ -1,0 +1,31 @@
+.App{
+  justify-content: center;
+}
+
+.controls {
+  display: flex;
+  margin: auto;
+  margin-top:3%;
+  justify-content: space-between;
+  width: 30%
+}
+
+.table {
+  margin: auto;
+  margin-top:3%;
+}
+
+.togglebtn {
+  background-color: rgb(213, 204, 204);
+  height: 40px;
+  font-size: 16px;
+  margin-left: 45%;
+  margin-top:3%;
+  border-radius:11px;
+}
+
+.addstudent {
+  margin: 0px auto;
+  margin-top:3%;
+  margin-left: 40%;
+}
