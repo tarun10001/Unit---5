@@ -12,6 +12,8 @@ export const NewOrder = () => {
   const dispatch = useDispatch();
 
   const [toggle, setToggle] = useState(false);
+  const [problem, setProblem] = useState("");
+  const [brand, setBrand] = useState("");
 
   useEffect(() => {
     getData();
@@ -27,6 +29,26 @@ export const NewOrder = () => {
     setToggle(!toggle);
   }
 
+  async function handleSubmit() {
+    let obj = {
+      problem: problem,
+      owner_name: user.username,
+      brand: brand,
+      cost: 142,
+      status: "Not Accepted",
+    };
+
+    fetch("http://localhost:8080/orders/", {
+      method: "POST",
+      headers: {
+        "content-type": "application/json",
+      },
+      body: JSON.stringify(obj),
+    });
+
+    getData();
+  }
+
   return (
     <div>
       <div className="form">
@@ -35,6 +57,7 @@ export const NewOrder = () => {
           type="text"
           name="problem"
           placeholder="Enter problem"
+          onChange={(e) => setProblem(e.target.value)}
         />
         {/* This input is readonly, it's coming from redux */}
         <input
@@ -51,9 +74,12 @@ export const NewOrder = () => {
           type="text"
           name="brand"
           placeholder="Enter brand name"
+          onChange={(e) => setBrand(e.target.value)}
         />
         {/* Create new problem, show it in below form immediately */}
-        <button className="submit">submit</button>
+        <button className="submit" onClick={() => handleSubmit()}>
+          submit
+        </button>
       </div>
 
       <div className="pastOrders">
