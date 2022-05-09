@@ -35,14 +35,7 @@ function App() {
         ></Route>
         <Route path="/logout" element={<Logout />}></Route>
       </Routes>
-      {/* <Routes>
-        
-        
-        
-        <Route path="/employees/:id" element={ }></Route>
-        
-        
-      </Routes> */}
+
     </div>
   );
 }
